@@ -1,0 +1,33 @@
+$site-background: #1e1e1e
+
+%default-style
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: $site-background
+    color: #ffff
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+header
+    @extend %default-style
+    height: 21vh
+    ul
+        @extend %default-style
+        list-style: none
+        justify-content: space-around
+        width: 30vw
+        li
+            &:hover
+                cursor: pointer
+                transform: scale(110%)
+
+.backgroundDisney
+    height: 60vh
+    background:
+        image: url("https://static-assets.bamgrid.com/product/disneyplus/images/share-default.14fadd993578b9916f855cebafb71e62.png")
+        position: center
+        size: 100%
